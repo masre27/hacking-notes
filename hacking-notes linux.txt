@@ -233,4 +233,30 @@ uninstaling vmware
 sudo vmware-installer --uninstall-product vmware-workstation  
 	vmware-installer --uninstall-product vmware-player
 
+Installing Android Studio
+
+    Download Android Studio from Android Studio website 
+
+    Extract the archive file into an appropriate location for your applications, eg: /opt. Use the filename of your downloaded archive, in my example android-studio-ide-141.2178183-linux.zip
+
+   1. sudo unzip android-studio-ide-141.2178183-linux.zip -d /opt
+
+    To launch Android Studio, navigate to the 
+   2. /opt/android-studio/bin directory in a terminal 
+   3. execute ./studio.sh. Or use a desktop file, see below.
+   
+   Create a desktop file
+  in ther terminal 
+  gedit androidstudio.desktop
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=android
+Comment=
+Exec=/opt/android-studio/bin/studio.sh
+Icon=/opt/android-studio/bin/studio.png
+Path=
+Terminal=false
+StartupNotify=false
 
