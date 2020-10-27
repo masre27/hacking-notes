@@ -216,6 +216,10 @@ sudo rm /var/lib/apt/lists/lock
 If the above command doesn’t work, try the one below:
 
 sudo killall apt-get
+sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
 				
 
 
