@@ -264,3 +264,12 @@ Path=
 Terminal=false
 StartupNotify=false
 
+
+Installing  Node.js for Ubuntu linux
+
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+nodejs -v
+
+
